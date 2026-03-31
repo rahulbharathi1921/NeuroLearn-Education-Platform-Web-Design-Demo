@@ -1,0 +1,1230 @@
+/* ===== RESPONSIVE DESIGN - MEDIA QUERIES ===== */
+
+/* ===== EXTRA LARGE SCREENS (1400px+) ===== */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-title {
+        font-size: 4.5rem;
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+/* ===== LARGE SCREENS (1200px - 1399px) ===== */
+@media (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .campus-container {
+        gap: var(--space-2xl);
+    }
+}
+
+/* ===== MEDIUM LARGE SCREENS (992px - 1199px) ===== */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    /* Navigation */
+    .navbar-search .input {
+        width: 180px;
+    }
+    
+    .navbar-search .input:focus {
+        width: 200px;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-stats {
+        gap: var(--space-xl);
+    }
+    
+    /* Dashboard */
+    .dashboard-card,
+    .gamification-card {
+        grid-column: span 6;
+    }
+    
+    .heatmap-grid {
+        grid-template-columns: repeat(26, 1fr);
+    }
+    
+    /* Campus */
+    .campus-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .campus-canvas-container {
+        height: 400px;
+    }
+    
+    /* AI Section */
+    .ai-card {
+        grid-column: span 6;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== MEDIUM SCREENS (768px - 991px) ===== */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    /* Navigation */
+    .navbar-menu {
+        display: none;
+    }
+    
+    .navbar-search {
+        display: none;
+    }
+    
+    .mobile-toggle {
+        display: flex;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--space-lg);
+    }
+    
+    .stat-value {
+        font-size: 2rem;
+    }
+    
+    /* Section */
+    .section {
+        padding: var(--space-3xl) 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Dashboard */
+    .dashboard-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .dashboard-card {
+        grid-column: span 6;
+    }
+    
+    .dashboard-card:nth-child(2),
+    .dashboard-card:nth-child(3) {
+        grid-column: span 3;
+    }
+    
+    .heatmap-grid {
+        grid-template-columns: repeat(13, 1fr);
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Gamification */
+    .gamification-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .gamification-card {
+        grid-column: span 6;
+    }
+    
+    .gamification-card:nth-child(2),
+    .gamification-card:nth-child(3) {
+        grid-column: span 3;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* AI Section */
+    .ai-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .ai-card {
+        grid-column: span 6;
+    }
+    
+    .recommendation-card {
+        min-width: 280px;
+    }
+    
+    /* Social */
+    .social-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .groups-grid,
+    .questions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Catalog */
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Enterprise */
+    .tenant-switcher {
+        flex-wrap: wrap;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-xl);
+    }
+}
+
+/* ===== SMALL MEDIUM SCREENS (576px - 767px) ===== */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        padding: 0 var(--space-md);
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* Navigation */
+    .navbar {
+        padding: var(--space-md) 0;
+    }
+    
+    .navbar.scrolled {
+        padding: var(--space-sm) 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-brand i {
+        font-size: 1.5rem;
+    }
+    
+    /* Mobile Menu */
+    .mobile-menu {
+        width: 100%;
+    }
+    
+    /* Hero */
+    .hero {
+        padding-top: 60px;
+    }
+    
+    .hero-content {
+        padding: var(--space-2xl) var(--space-md);
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .stat-item {
+        flex-direction: row;
+        gap: var(--space-md);
+    }
+    
+    .stat-value {
+        font-size: 1.8rem;
+    }
+    
+    .stat-label {
+        margin-top: 0;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+    
+    .btn-lg {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Section */
+    .section {
+        padding: var(--space-2xl) 0;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Catalog */
+    .catalog-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-group {
+        justify-content: center;
+    }
+    
+    .search-box .input {
+        min-width: 100%;
+    }
+    
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    /* Dashboard */
+    .dashboard-grid,
+    .gamification-grid,
+    .ai-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-card,
+    .dashboard-card:nth-child(2),
+    .dashboard-card:nth-child(3),
+    .gamification-card,
+    .gamification-card:nth-child(2),
+    .gamification-card:nth-child(3),
+    .ai-card {
+        grid-column: span 1;
+    }
+    
+    .heatmap-grid {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    
+    .heatmap-day {
+        width: 100%;
+        height: 10px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .xp-display {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    /* Campus */
+    .campus-section {
+        padding: var(--space-3xl) 0;
+    }
+    
+    .campus-canvas-container {
+        height: 300px;
+    }
+    
+    .campus-controls {
+        padding: var(--space-xs);
+        gap: var(--space-xs);
+    }
+    
+    .campus-control-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .campus-title {
+        font-size: 2rem;
+    }
+    
+    /* AI Section */
+    .ai-title {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .recommendation-card {
+        min-width: 260px;
+    }
+    
+    /* Social */
+    .social-tab {
+        padding: var(--space-sm) var(--space-md);
+        font-size: 0.9rem;
+    }
+    
+    .groups-grid,
+    .questions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Enterprise */
+    .enterprise-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .compliance-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* PWA */
+    .pwa-features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pwa-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Accessibility */
+    .accessibility-controls {
+        grid-template-columns: 1fr;
+    }
+    
+    .accessibility-control {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+    }
+    
+    /* Performance */
+    .performance-metrics {
+        grid-template-columns: 1fr;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* FAB */
+    .fab-container {
+        bottom: var(--space-lg);
+        right: var(--space-lg);
+    }
+    
+    .fab {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+    
+    .fab-item {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+    
+    /* Notifications */
+    .pwa-install-prompt {
+        left: var(--space-md);
+        right: var(--space-md);
+        bottom: var(--space-md);
+        max-width: none;
+    }
+    
+    .notification-test {
+        top: var(--space-md);
+        right: var(--space-md);
+        left: var(--space-md);
+        max-width: none;
+    }
+    
+    .offline-indicator {
+        left: var(--space-md);
+        right: var(--space-md);
+        transform: none;
+        justify-content: center;
+    }
+    
+    /* Modals */
+    .modal-content {
+        padding: var(--space-xl);
+        margin: var(--space-md);
+        width: calc(100% - var(--space-xl));
+        max-height: calc(100vh - var(--space-2xl));
+    }
+    
+    .achievement-unlock {
+        padding: var(--space-xl);
+    }
+    
+    .achievement-unlock-icon {
+        font-size: 3rem;
+    }
+    
+    .achievement-unlock-title {
+        font-size: 1.5rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: var(--space-3xl) 0 var(--space-lg);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
+
+/* ===== EXTRA SMALL SCREENS (375px - 575px) ===== */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 var(--space-sm);
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .hero-actions {
+        gap: var(--space-sm);
+    }
+    
+    .stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    /* Section */
+    .section {
+        padding: var(--space-xl) 0;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    /* Cards */
+    .card {
+        padding: var(--space-md);
+    }
+    
+    .dashboard-card,
+    .gamification-card,
+    .ai-card {
+        padding: var(--space-md);
+        min-height: auto;
+    }
+    
+    /* Dashboard */
+    .dashboard-card-title,
+    .gamification-card-title,
+    .ai-card-title {
+        font-size: 1rem;
+    }
+    
+    .dashboard-card-icon,
+    .gamification-card-icon {
+        font-size: 1.5rem;
+    }
+    
+    .progress-circle {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .progress-circle-inner {
+        font-size: 1.5rem;
+    }
+    
+    .streak-value {
+        font-size: 3rem;
+    }
+    
+    .xp-value {
+        font-size: 2rem;
+    }
+    
+    .level-value {
+        font-size: 1.5rem;
+    }
+    
+    .stat-card-value {
+        font-size: 2rem;
+    }
+    
+    /* Badges */
+    .skill-badge {
+        min-width: 70px;
+        padding: var(--space-xs);
+    }
+    
+    .badge-icon {
+        font-size: 1.5rem;
+    }
+    
+    .badge-name {
+        font-size: 0.7rem;
+    }
+    
+    /* Leaderboard */
+    .leaderboard-rank {
+        font-size: 1rem;
+    }
+    
+    .leaderboard-avatar {
+        width: 35px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+    
+    .leaderboard-name {
+        font-size: 0.9rem;
+    }
+    
+    /* Achievements */
+    .achievement-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .achievement-name {
+        font-size: 0.85rem;
+    }
+    
+    .achievement-desc {
+        font-size: 0.65rem;
+    }
+    
+    .achievement-xp {
+        font-size: 0.75rem;
+    }
+    
+    /* Campus */
+    .campus-canvas-container {
+        height: 250px;
+    }
+    
+    .campus-title {
+        font-size: 1.75rem;
+    }
+    
+    .campus-description {
+        font-size: 0.9rem;
+    }
+    
+    .hotspot-item {
+        padding: var(--space-sm);
+    }
+    
+    .hotspot-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .hotspot-name {
+        font-size: 0.9rem;
+    }
+    
+    .hotspot-desc {
+        font-size: 0.75rem;
+    }
+    
+    /* AI Section */
+    .ai-title {
+        font-size: 1.75rem;
+    }
+    
+    .ai-card-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.25rem;
+    }
+    
+    .recommendation-card {
+        min-width: 240px;
+    }
+    
+    .recommendation-image {
+        height: 120px;
+    }
+    
+    .match-percentage {
+        font-size: 1rem;
+    }
+    
+    .recommendation-title {
+        font-size: 1rem;
+    }
+    
+    /* Social */
+    .social-tabs {
+        flex-direction: column;
+    }
+    
+    .social-tab {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .post-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    
+    .post-name {
+        font-size: 0.95rem;
+    }
+    
+    .post-content {
+        font-size: 0.9rem;
+    }
+    
+    .engagement-btn {
+        padding: var(--space-xs);
+        font-size: 0.8rem;
+    }
+    
+    .group-title,
+    .question-title {
+        font-size: 1rem;
+    }
+    
+    .group-description,
+    .question-content {
+        font-size: 0.85rem;
+    }
+    
+    .member-avatar {
+        width: 25px;
+        height: 25px;
+        font-size: 0.7rem;
+    }
+    
+    .question-tag {
+        font-size: 0.65rem;
+        padding: 1px 6px;
+    }
+    
+    .vote-btn {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .vote-count {
+        font-size: 1rem;
+    }
+    
+    .activity-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* Enterprise */
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .enterprise-feature h3 {
+        font-size: 1.1rem;
+    }
+    
+    .compliance-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+    
+    .compliance-info h4 {
+        font-size: 0.95rem;
+    }
+    
+    .compliance-info p {
+        font-size: 0.8rem;
+    }
+    
+    /* PWA */
+    .pwa-feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+    
+    .pwa-feature h3 {
+        font-size: 1rem;
+    }
+    
+    .pwa-feature p {
+        font-size: 0.85rem;
+    }
+    
+    .pwa-stat .stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .pwa-stat .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    /* Accessibility */
+    .control-label {
+        font-size: 0.9rem;
+    }
+    
+    .font-size-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+    
+    .keyboard-hint {
+        font-size: 0.75rem;
+    }
+    
+    /* Performance */
+    .metric-card {
+        padding: var(--space-md);
+    }
+    
+    .metric-header h4 {
+        font-size: 0.95rem;
+    }
+    
+    .metric-score {
+        font-size: 1.5rem;
+    }
+    
+    .metric-bar span:first-child {
+        width: 80px;
+        font-size: 0.8rem;
+    }
+    
+    .metric-bar span:last-child {
+        width: 25px;
+        font-size: 0.85rem;
+    }
+    
+    .tip-card i {
+        font-size: 1.5rem;
+    }
+    
+    .tip-card h4 {
+        font-size: 0.9rem;
+    }
+    
+    .tip-card p {
+        font-size: 0.8rem;
+    }
+    
+    /* FAB */
+    .fab-container {
+        bottom: var(--space-md);
+        right: var(--space-md);
+    }
+    
+    .fab {
+        width: 48px;
+        height: 48px;
+        font-size: 1.1rem;
+    }
+    
+    .fab-item {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    
+    /* Notifications */
+    .pwa-prompt-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+    
+    .pwa-prompt-text h3 {
+        font-size: 1rem;
+    }
+    
+    .pwa-prompt-text p {
+        font-size: 0.85rem;
+    }
+    
+    .notification-header h4 {
+        font-size: 0.95rem;
+    }
+    
+    .notification-body p {
+        font-size: 0.85rem;
+    }
+    
+    /* Modals */
+    .modal-content {
+        padding: var(--space-lg);
+    }
+    
+    .modal-close {
+        width: 35px;
+        height: 35px;
+        font-size: 1.25rem;
+    }
+    
+    .achievement-unlock {
+        padding: var(--space-lg);
+    }
+    
+    .achievement-unlock-icon {
+        font-size: 2.5rem;
+    }
+    
+    .achievement-unlock-title {
+        font-size: 1.25rem;
+    }
+    
+    .achievement-unlock-desc {
+        font-size: 0.9rem;
+    }
+    
+    .achievement-unlock-xp {
+        font-size: 1.25rem;
+    }
+    
+    /* Footer */
+    .footer-brand {
+        font-size: 1.5rem;
+    }
+    
+    .footer-description {
+        font-size: 0.9rem;
+    }
+    
+    .footer-heading {
+        font-size: 1rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+    
+    .footer-social a {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .footer-bottom {
+        font-size: 0.75rem;
+    }
+}
+
+/* ===== TINY SCREENS (< 375px) ===== */
+@media (max-width: 374px) {
+    .container {
+        padding: 0 var(--space-xs);
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    .section-title {
+        font-size: 1.25rem;
+    }
+    
+    .stat-value {
+        font-size: 1.25rem;
+    }
+    
+    .streak-value {
+        font-size: 2.5rem;
+    }
+    
+    .xp-value {
+        font-size: 1.75rem;
+    }
+    
+    .level-value {
+        font-size: 1.25rem;
+    }
+    
+    .stat-card-value {
+        font-size: 1.75rem;
+    }
+}
+
+/* ===== LANDSCAPE ORIENTATION ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: var(--space-2xl) 0;
+    }
+    
+    .hero-content {
+        padding: var(--space-lg) var(--space-sm);
+    }
+    
+    .campus-canvas-container {
+        height: 250px;
+    }
+    
+    .modal-content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .achievement-unlock {
+        padding: var(--space-lg);
+    }
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    [data-theme="light"] {
+        --border-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .btn-primary,
+    .btn-neon {
+        border: 2px solid white;
+    }
+    
+    .card,
+    .dashboard-card,
+    .gamification-card,
+    .ai-card {
+        border-width: 2px;
+    }
+}
+
+/* ===== DARK MODE PREFERENCE ===== */
+@media (prefers-color-scheme: dark) {
+    /* Default is already dark, but this ensures consistency */
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    .navbar,
+    .mobile-menu,
+    .fab-container,
+    .preloader,
+    .pwa-install-prompt,
+    .offline-indicator,
+    .notification-test {
+        display: none !important;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: var(--space-lg) 0;
+    }
+    
+    .section {
+        padding: var(--space-lg) 0;
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: underline;
+    }
+    
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+    
+    .btn {
+        border: 1px solid black;
+        background: white !important;
+        color: black !important;
+    }
+}
+
+/* ===== TOUCH DEVICE OPTIMIZATIONS ===== */
+@media (hover: none) and (pointer: coarse) {
+    .btn:hover {
+        transform: none;
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+    
+    .course-card:hover {
+        transform: none;
+    }
+    
+    .skill-badge:hover {
+        transform: none;
+    }
+    
+    .hotspot-item:hover {
+        transform: none;
+    }
+    
+    .leaderboard-item:hover {
+        transform: none;
+    }
+    
+    .achievement-item:hover {
+        background: rgba(255, 255, 255, 0.03);
+    }
+    
+    .challenge-item:hover {
+        transform: none;
+    }
+    
+    .activity-item:hover {
+        transform: none;
+    }
+    
+    /* Increase touch targets */
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .filter-btn {
+        min-height: 44px;
+    }
+    
+    .social-tab {
+        min-height: 44px;
+    }
+    
+    .campus-control-btn {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .font-size-btn {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* ===== SAFE AREA INSETS (iPhone X+) ===== */
+@supports (padding: max(0px)) {
+    .navbar {
+        padding-left: max(var(--space-lg), env(safe-area-inset-left));
+        padding-right: max(var(--space-lg), env(safe-area-inset-right));
+    }
+    
+    .mobile-menu {
+        padding-left: max(var(--space-xl), env(safe-area-inset-left));
+        padding-right: max(var(--space-xl), env(safe-area-inset-right));
+    }
+    
+    .footer {
+        padding-left: max(var(--space-lg), env(safe-area-inset-left));
+        padding-right: max(var(--space-lg), env(safe-area-inset-right));
+        padding-bottom: max(var(--space-xl), env(safe-area-inset-bottom));
+    }
+    
+    .fab-container {
+        right: max(var(--space-xl), env(safe-area-inset-right));
+        bottom: max(var(--space-xl), env(safe-area-inset-bottom));
+    }
+}
+
+/* ===== FOLDABLE DEVICES ===== */
+@media (spanning: single-fold-vertical) {
+    .container {
+        max-width: calc(50% - 1rem);
+    }
+}
