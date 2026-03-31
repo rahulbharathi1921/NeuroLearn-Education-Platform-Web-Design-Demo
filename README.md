@@ -187,10 +187,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **GitHub**: [@your-username](https://github.com/your-username)
-- **Email**: contact@neurolearn.com
-- **Website**: [neurolearn.com](https://neurolearn.com)
-
----
-
-Made with 💙 by the NeuroLearn Team
+- **Email**: mailtorahulbharathi@gmail.com 
